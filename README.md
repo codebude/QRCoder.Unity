@@ -2,7 +2,7 @@
 [![qrcoder-unity MyGet Build Status](https://www.myget.org/BuildSource/Badge/qrcoder-unity?identifier=ebdfbc4c-0c57-4f3d-9afd-1f9a0abde8ca&kill_cache=1)](https://www.myget.org/feed/Packages/qrcoder-unity)
 ## Info 
 
-QRCoder.Unity is an extension for the popular QRCoder.NET library. It allows you to render QRCodes as `Texture2D` objetcs for usage in Unity projects. Please open issues in this repository only if they are Unity specific. For general problems/ideas/enhancement requests concerning the QR code funtionalities, please open an issue in the [main QRCoder repository](https://github.com/codebude/QRCoder).
+QRCoder.Unity is an extension for the popular QRCoder.NET library. It allows you to render QRCodes as `Texture2D` objetcs for usage in Unity projects. Please open issues in this repository only if they are Unity-specific. For general problems/ideas/enhancement requests concerning the QR code funtionalities, please open an issue in the [main QRCoder repository](https://github.com/codebude/QRCoder).
 
 For usage information see:
 [**QRCode Wiki**](https://github.com/codebude/QRCoder/wiki) and especially the page about the Unity renderer: [UnityQRCodeRenderer in detail](https://github.com/codebude/QRCoder/wiki/Advanced-usage---QR-Code-renderers#27-unityqrcode-renderer-in-detail)
@@ -14,7 +14,12 @@ Either checkout this Github repository or install QRCoder.Unity via NuGet Packag
 ```bash
 PM> Install-Package QRCoder.Unity
 ```
-
+  
+If you want to use QRCoder.Unity with your own UnityEngine.dll and don't want to use the version delivered by QRCoder.Unity, please use the "QRCoder.Unity.Light" package, which comes without the UnityEngine.dll dependency:  
+```bash
+PM> Install-Package QRCoder.Unity.Light
+```
+  
 *Note: The NuGet feed contains only **stable** releases. If you wan't the latest build add one of the following urls to the "Package Sources" of Visual Studio's NuGet Package Manager options.*
 
 *NuGet V3 feed URL (Visual Studio 2015+):* `https://www.myget.org/F/qrcoder-unity/api/v3/index.json`
