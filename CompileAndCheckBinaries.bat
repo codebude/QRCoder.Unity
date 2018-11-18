@@ -1,5 +1,10 @@
 echo Working dir: %cd%
 
+set config=%1
+if "%config%" == "" (
+   set config=Release
+)
+
 "C:\Program Files (x86)\MSBuild\14.0\bin\msbuild" QRCoder.Unity\QRCoder.Unity.csproj /p:Configuration="%config%";VisualStudioVersion=14.0 /tv:14.0 /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false /t:Rebuild
 copy "QRCoder.Unity\bin\%config%\net35\*.dll" "Build\lib\net35"
 del /F /S /Q "QRCoder\bin"

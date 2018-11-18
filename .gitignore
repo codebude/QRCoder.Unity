@@ -219,3 +219,4 @@ pip-log.txt
 *.userprefs
 
 QRCoder/PortabilityAnalysis.html
+!Tools/nuget*
