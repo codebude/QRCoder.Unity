@@ -16,7 +16,7 @@ mkdir Build
 mkdir Build\lib
 mkdir Build\lib\net35
 mkdir Build\lib\net40
-
+del README.md
 
 echo Compile single projects
 
