@@ -46,3 +46,4 @@ certUtil -hashfile "Build\lib\net40\QRCoder.dll" md5
 
 
 call %NuGet% pack "QRCoder.Unity.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
+call %NuGet% pack "QRCoder.Unity.Light.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"

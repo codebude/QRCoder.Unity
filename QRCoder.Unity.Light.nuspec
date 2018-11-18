@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>QRCoder.Unity</id>
+		<version>$version$</version>
+		<title>QRCoder.Unity.Light</title>
+		<authors>Raffael Herrmann</authors>
+		<owners>Raffael Herrmann</owners>
+		<licenseUrl>https://github.com/codebude/QRCoder.Unity/blob/master/LICENSE.txt</licenseUrl>
+		<projectUrl>https://github.com/codebude/QRCoder.Unity/</projectUrl>
+		<iconUrl>http://code-bude.net/downloads/qrcoder-logo-unity.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>QRCoder.Unity.Light is an extension to the popular QRCoder library. It allows you to create Texture2D-based QR codes for usage in Unity projects.The "Light" version doesn't come with UnityEngine dependency and allows you to use your own UnityEngine.dll. It's licensed under the MIT-license.</description>
+		<releaseNotes/>
+		<copyright>Copyright &#x00A9; www.code-bude.net / Raffael Herrmann.  All rights reserved.</copyright>
+		<tags>c# csharp qr qrcoder qrcode qr-generator qr-code-generator unity texture2d</tags>
+		<dependencies>									
+			<group>
+				<dependency id="QRCoder" version="1.3.4" />
+			</group>
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="Build\lib\net35\QRCoder.Unity.dll" target="lib\net35\" />
+		<file src="Build\lib\net40\QRCoder.Unity.dll" target="lib\net40\" />
+	</files>
+</package>
