@@ -1,5 +1,5 @@
 # QRCoder.Unity
-[![qrcoder-unity MyGet Build Status](https://www.myget.org/BuildSource/Badge/qrcoder-unity?identifier=ebdfbc4c-0c57-4f3d-9afd-1f9a0abde8ca)](https://www.myget.org/feed/Packages/qrcoder-unity)
+[![qrcoder-unity MyGet Build Status](https://www.myget.org/BuildSource/Badge/qrcoder-unity?identifier=ebdfbc4c-0c57-4f3d-9afd-1f9a0abde8ca&kill_cache=1)](https://www.myget.org/feed/Packages/qrcoder-unity)
 ## Info 
 
 QRCoder.Unity is an extension for the popular QRCoder.NET library. It allows you to render QRCodes as `Texture2D` objetcs for usage in Unity projects. Please open issues in this repository only if they are Unity specific. For general problems/ideas/enhancement requests concerning the QR code funtionalities, please open an issue in the [main QRCoder repository](https://github.com/codebude/QRCoder).
