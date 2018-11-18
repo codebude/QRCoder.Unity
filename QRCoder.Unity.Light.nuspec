@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
 	<metadata>
-		<id>QRCoder.Unity</id>
+		<id>QRCoder.Unity.Light</id>
 		<version>$version$</version>
 		<title>QRCoder.Unity.Light</title>
 		<authors>Raffael Herrmann</authors>
