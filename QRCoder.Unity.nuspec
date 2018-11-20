@@ -16,7 +16,6 @@
 		<tags>c# csharp qr qrcoder qrcode qr-generator qr-code-generator unity texture2d</tags>
 		<dependencies>									
 			<group>
-				<dependency id="Unity3D.UnityEngine" version="2018.3.0-b9" />
 				<dependency id="QRCoder" version="1.3.4" />
 			</group>
 		</dependencies>

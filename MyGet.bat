@@ -44,10 +44,5 @@ certUtil -hashfile "Build\lib\net35\QRCoder.dll" md5
 powershell -Command "[Reflection.Assembly]::ReflectionOnlyLoadFrom(\"%cd%\Build\lib\net40\QRCoder.Unity.dll\").ImageRuntimeVersion"
 certUtil -hashfile "Build\lib\net40\QRCoder.dll" md5
 
-if "%packagename%" == "qrcoder.unity.full" (
-  echo Build full package
-  call %NuGet% pack "QRCoder.Unity.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
-) else (
-  echo Build light package
-  call %NuGet% pack "QRCoder.Unity.Light.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
-)
+echo Build package
+call %NuGet% pack "QRCoder.Unity.nuspec" -NoPackageAnalysis -verbosity detailed -o Build -Version %version% -p Configuration="%config%"
