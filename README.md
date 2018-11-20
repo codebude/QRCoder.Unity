@@ -15,18 +15,18 @@ Either checkout this Github repository or install QRCoder.Unity via NuGet Packag
 PM> Install-Package QRCoder.Unity
 ```
   
-If you want to use QRCoder.Unity with your own UnityEngine.dll and don't want to use the version delivered by QRCoder.Unity, please use the "QRCoder.Unity.Light" package, which comes without the UnityEngine.dll dependency:  
-```bash
-PM> Install-Package QRCoder.Unity.Light
-```
-  
 *Note: The NuGet feed contains only **stable** releases. If you wan't the latest build add one of the following urls to the "Package Sources" of Visual Studio's NuGet Package Manager options.*
 
 *NuGet V3 feed URL (Visual Studio 2015+):* `https://www.myget.org/F/qrcoder-unity/api/v3/index.json`
 
 *NuGet V2 feed URL (Visual Studio 2012+):* `https://www.myget.org/F/qrcoder-unity/api/v2`
 
- 
+
+## Usage & Demos
+
+*...will follow soon.*
+  
+  
 ## Legal information and credits
 
 QRCoder.Unity is project by [Raffael Herrmann](http://raffaelherrmann.de) and was first released 
