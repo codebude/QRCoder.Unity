@@ -23,7 +23,7 @@ PM> Install-Package QRCoder.Unity
 
 ## Usage & Demos
 
-*Note: For a complete up'n'running solution have a look at the demo projects, provided in this repository.*
+*Note: For a complete up'n'running solution have a look at the [demo project](https://github.com/codebude/QRCoder.Unity/tree/master/QRCoder.Unity.Demo), provided in this repository.*
 ![Demo animation](/Assets/QRCoder.Unity_demo.gif "Demo app from this repository")
 
 ### Preparation
