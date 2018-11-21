@@ -4,8 +4,7 @@
 
 QRCoder.Unity is an extension for the popular QRCoder.NET library. It allows you to render QRCodes as `Texture2D` objetcs for usage in Unity projects. Please open issues in this repository only if they are Unity-specific. For general problems/ideas/enhancement requests concerning the QR code funtionalities, please open an issue in the [main QRCoder repository](https://github.com/codebude/QRCoder).
 
-For usage information see:
-[**QRCode Wiki**](https://github.com/codebude/QRCoder/wiki) and especially the page about the Unity renderer: [UnityQRCodeRenderer in detail](https://github.com/codebude/QRCoder/wiki/Advanced-usage---QR-Code-renderers#27-unityqrcode-renderer-in-detail)
+For usage information see the **demo code below**. For more general information check the [**QRCoder Wiki**](https://github.com/codebude/QRCoder/wiki).
  
  
 ## Installation
@@ -24,8 +23,32 @@ PM> Install-Package QRCoder.Unity
 
 ## Usage & Demos
 
-*...will follow soon.*
-  
+*Note: For a complete up'n'running solution have a look at the demo projects, provided in this repository.*
+![Demo animation](/Assets/QRCoder.Unity_demo.gif "Demo app from this repository")
+
+### Preparation
+For use in Unity projects you should install the QRCoder.Unity via NuGet package manager for Unity3D. So, if not done, you should install [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) first, before doing the next steps. (If you install the package via NuGet from Visual Studio/Monodevelop, Unity won't recognize the DLLs correctly.) After installation of NuGet for Unity, restart the Unity IDE.
+
+### General usage
+To use QRCoder.Unity in an Unity project do the following steps:  
+- Install the package `QRCoder.Unity` via NuGet for Unity package manager. (If it won't install, check the note for Linux/MacOS users in the next section.)
+- Add a new script (or edit an existing script).
+- Add the following using statements to the script's header section
+```csharp
+using QRCoder;
+using QRCoder.Unity;
+```
+- Create the QR code and render it as `Texture2D`.
+```csharp
+QRCodeGenerator qrGenerator = new QRCodeGenerator();
+QRCodeData qrCodeData = qrGenerator.CreateQrCode("Hello world!", QRCodeGenerator.ECCLevel.Q);
+UnityQRCode qrCode = new UnityQRCode(qrCodeData);
+Texture2D qrCodeAsTexture2D = qrCode.GetGraphic(20);
+```
+- Attach the QR code texture to a game object. (The following example uses an cube object named "Cube".)
+```csharp
+GameObject.Find("Cube").GetComponent<Renderer>().material.mainTexture = qrCodeAsTexture2D;
+```
   
 ## Legal information and credits
 
