@@ -27,11 +27,11 @@ PM> Install-Package QRCoder.Unity
 ![Demo animation](/Assets/QRCoder.Unity_demo.gif "Demo app from this repository")
 
 ### Preparation
-For use in Unity projects you should install the QRCoder.Unity via NuGet package manager for Unity3D. So, if not done, you should install [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) first, before doing the next steps. (If you install the package via NuGet from Visual Studio/Monodevelop, Unity won't recognize the DLLs correctly.) After installation of NuGet for Unity, restart the Unity IDE.
+For use in Unity projects you should install the QRCoder.Unity library via *NuGet for Unity3D*-package manager. So (if not done already) you should install [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) first, before doing the next steps. (If you install the QRCoder.Unity package via NuGet from Visual Studio/Monodevelop, Unity won't recognize the Dlls correctly.) After installation of *NuGet for Unity*, restart the Unity IDE.
 
 ### General usage
 To use QRCoder.Unity in an Unity project do the following steps:  
-- Install the package `QRCoder.Unity` via NuGet for Unity package manager. (If it won't install, check the note for Linux/MacOS users in the next section.)
+- Install the package `QRCoder.Unity` via NuGet for Unity package manager.
 - Add a new script (or edit an existing script).
 - Add the following using statements to the script's header section
 ```csharp
