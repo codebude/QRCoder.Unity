@@ -1,4 +1,3 @@
-#if ENABLE_UIELEMENTS_CONTROLS
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -112,4 +111,3 @@ namespace QRCoder.Unity
         }
     }
 }
-#endif
